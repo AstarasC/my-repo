@@ -1,0 +1,97 @@
+---
+title: "ggplot-intro"
+author: "Christos"
+date: "July 13, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## The Plan
+
+We will load libraries and learn how ot use ggplot2.
+
+summary(cars)
+
+```{r}
+# Here we write R
+
+summary(cars)
+
+# Hashtags mean comment
+
+```
+
+#Load libraries
+```{r}
+library(dplyr)
+library(gapminder)
+library(ggplot2) #install.packages("ggplot2")
+
+## subset our data
+
+g=gapminder %>% 
+  filter(year==2007) %>% 
+  mutate(pop_m = pop/1e6)
+
+```
+
+# My first plot
+
+```{r}
+
+# ggplot(data, aes(what's x, what's y)) + what kind of plot
+s=ggplot(g, aes(x=gdpPercap, y=lifeExp)) + geom_point()
+
+s
+
+s2=s +aes(size=pop_m)
+
+s2
+
+s3=s2 + aes(color=continent)
+
+s3
+
+```
+
+# Nice and piped through
+
+
+```{r}
+
+# ggplot(data, aes(what's x, what's y)) + what kind of plot
+s4=ggplot(g, aes(x=gdpPercap, y=lifeExp)) +
+    geom_point() +
+    aes(size=pop_m) +
+    aes(color=continent) +
+    ggtitle("Health and Wealth of Nations for 2007") +
+    xlab("GDP per capita (USD/year)") +
+    ylab("life expectancy (years)") +
+    scale_colour_discrete("Continent") +
+    scale_size_continuous("Population (M)")
+
+s4
+
+```
+
+
+# Let's create a boxplot
+
+```{r}
+# Hint - look at cheatsheet for how to do this
+# geom_boxplot()
+
+b=ggplot(g, aes(x=continent, y=lifeExp)) +
+    geom_boxplot() + 
+    aes(fill=continent) +
+    theme(legend.position = "none")
+
+b
+
+
+```
+
