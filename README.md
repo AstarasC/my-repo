@@ -15,4 +15,3 @@ This repository demonstrates **software** and _formats_:
 
 ![](https://octodex.github.com/images/labtocat.png)
 
-![](https://www.wildcru.org/wp-content/uploads/2013/09/48791298-300x249.jpg)
