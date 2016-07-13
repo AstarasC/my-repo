@@ -116,7 +116,7 @@ m = gvisMotionChart(
   sizevar='pop_m')
 
 
-m
+plot(m)
 
 
 
