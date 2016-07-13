@@ -221,16 +221,37 @@ m = gvisMotionChart(
   yvar='lifeExp', 
   colorvar='continent',
   sizevar='pop_m')
-plot(m)</code></pre>
-<pre><code>## &lt;!-- MotionChart generated in R 3.3.1 by googleVis 0.6.0 package --&gt;
-## &lt;!-- Wed Jul 13 16:23:05 2016 --&gt;
+
+
+m</code></pre>
+<pre><code>## &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+##   &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+## &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+## &lt;head&gt;
+## &lt;title&gt;MotionChartID84c4829196c&lt;/title&gt;
+## &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;
+## &lt;style type=&quot;text/css&quot;&gt;
+## body {
+##   color: #444444;
+##   font-family: Arial,Helvetica,sans-serif;
+##   font-size: 75%;
+##   }
+##   a {
+##   color: #4D87C7;
+##   text-decoration: none;
+## }
+## &lt;/style&gt;
+## &lt;/head&gt;
+## &lt;body&gt;
+##  &lt;!-- MotionChart generated in R 3.3.1 by googleVis 0.6.0 package --&gt;
+## &lt;!-- Wed Jul 13 16:30:44 2016 --&gt;
 ## 
 ## 
 ## &lt;!-- jsHeader --&gt;
 ## &lt;script type=&quot;text/javascript&quot;&gt;
 ##  
 ## // jsData 
-## function gvisDataMotionChartID21a45f3d524f () {
+## function gvisDataMotionChartID84c4829196c () {
 ## var data = new google.visualization.DataTable();
 ## var datajson =
 ## [
@@ -17288,8 +17309,8 @@ plot(m)</code></pre>
 ## }
 ##  
 ## // jsDrawChart
-## function drawChartMotionChartID21a45f3d524f() {
-## var data = gvisDataMotionChartID21a45f3d524f();
+## function drawChartMotionChartID84c4829196c() {
+## var data = gvisDataMotionChartID84c4829196c();
 ## var options = {};
 ## options[&quot;width&quot;] = [600];
 ## options[&quot;height&quot;] = [500];
@@ -17297,7 +17318,7 @@ plot(m)</code></pre>
 ## 
 ## 
 ##     var chart = new google.visualization.MotionChart(
-##     document.getElementById('MotionChartID21a45f3d524f')
+##     document.getElementById('MotionChartID84c4829196c')
 ##     );
 ##     chart.draw(data,options);
 ##     
@@ -17321,9 +17342,9 @@ plot(m)</code></pre>
 ##   pkgs.push(chartid);
 ##   
 ## // Add the drawChart function to the global list of callbacks
-## callbacks.push(drawChartMotionChartID21a45f3d524f);
+## callbacks.push(drawChartMotionChartID84c4829196c);
 ## })();
-## function displayChartMotionChartID21a45f3d524f() {
+## function displayChartMotionChartID84c4829196c() {
 ##   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
 ##   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
 ##   window.clearTimeout(window.__gvisLoad);
@@ -17347,13 +17368,21 @@ plot(m)</code></pre>
 ## &lt;/script&gt;
 ##  
 ## &lt;!-- jsChart --&gt;  
-## &lt;script type=&quot;text/javascript&quot; src=&quot;https://www.google.com/jsapi?callback=displayChartMotionChartID21a45f3d524f&quot;&gt;&lt;/script&gt;
+## &lt;script type=&quot;text/javascript&quot; src=&quot;https://www.google.com/jsapi?callback=displayChartMotionChartID84c4829196c&quot;&gt;&lt;/script&gt;
 ##  
 ## &lt;!-- divChart --&gt;
 ##   
-## &lt;div id=&quot;MotionChartID21a45f3d524f&quot; 
+## &lt;div id=&quot;MotionChartID84c4829196c&quot; 
 ##   style=&quot;width: 600; height: 500;&quot;&gt;
-## &lt;/div&gt;</code></pre>
+## &lt;/div&gt;
+##  &lt;div&gt;&lt;span&gt;Data: gapminder %&gt;% mutate(pop_m = pop/1e+06, log_gdpPercap = log(gdpPercap)) &amp;#8226; Chart ID: &lt;a href=&quot;Chart_MotionChartID84c4829196c.html&quot;&gt;MotionChartID84c4829196c&lt;/a&gt; &amp;#8226; &lt;a href=&quot;https://github.com/mages/googleVis&quot;&gt;googleVis-0.6.0&lt;/a&gt;&lt;/span&gt;&lt;br /&gt; 
+## &lt;!-- htmlFooter --&gt;
+## &lt;span&gt; 
+##   R version 3.3.1 (2016-06-21) 
+##   &amp;#8226; &lt;a href=&quot;https://developers.google.com/terms/&quot;&gt;Google Terms of Use&lt;/a&gt; &amp;#8226; &lt;a href=&quot;https://google-developers.appspot.com/chart/interactive/docs/gallery/motionchart&quot;&gt;Documentation and Data Policy&lt;/a&gt;
+## &lt;/span&gt;&lt;/div&gt;
+## &lt;/body&gt;
+## &lt;/html&gt;</code></pre>
 </div>
 
 

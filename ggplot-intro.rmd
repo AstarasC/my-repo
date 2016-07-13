@@ -114,7 +114,9 @@ m = gvisMotionChart(
   yvar='lifeExp', 
   colorvar='continent',
   sizevar='pop_m')
-plot(m)
+
+
+m
 
 
 
